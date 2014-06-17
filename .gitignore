@@ -1,4 +1,12 @@
 #################
+## images directory
+#################
+f-sprite/
+f-sprite-shiny/
+items/
+minisprites/
+
+#################
 ## Eclipse
 #################
 

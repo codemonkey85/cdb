@@ -165,6 +165,9 @@
 			c_pkm = pl.val();
 		});
 		$('#ie-button').on('click', function() { // click import/export btn
+			// dummy data:
+			// Smaug (Charizard) (M) @ Charizardite Y\nAbility: Solar Power\nShiny: No\nEVs: 4 HP \/ 252 SAtk \/ 252 Spd\nModest Nature\n- Solar Beam\n- Fire Blast\n- Focus Blast\n- Roost\n\nLustrous (Aegislash) (M) @ Leftovers\nAbility: Stance Change\nShiny: Yes\nEVs: 240 HP \/ 16 Atk \/ 252 SAtk\nQuiet Nature\nIVs: 30 Atk \/ 30 SAtk \/ 30 Spd\n- King\'s Shield\n- Pursuit\n- Shadow Ball\n- 
+			$('.ie-modal textarea').val('');
 			$('.ie-modal').modal('show');			
 		});
 		isShiny.on('ifChecked', function() { // change Pokemon's color scheme

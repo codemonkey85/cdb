@@ -3,12 +3,13 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        View
-        <small>Pokedex</small>
+        Pokedex
+        <small>Master List</small>
     </h1>
     <ol class="breadcrumb">
         <li><a href="<?php echo base_url(); ?>"><i class="fa fa-home"></i> Home</a></li>
-        <li class="active"><i class="fa fa-bug"></i> Pokedex</li>
+        <li class=""><a href="<?php echo base_url(); ?>pokedex"><i class="fa fa-bug"></i> Pokedex</a></li>
+        <li class="active"></i> Master List</li>
     </ol>
 </section>
 <!-- Main content -->

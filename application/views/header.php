@@ -6,7 +6,7 @@
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link href="<?php echo base_url() ?>public/img/moon-ball.png" type="image/x-icon" rel="shortcut icon">
+    <link href="<?php echo base_url() ?>public/img/favicon.ico" type="image/x-icon" rel="shortcut icon">
     <!-- bootstrap 3.0.2 -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/bootstrap.min.css">
     <!-- font Awesome -->
@@ -54,7 +54,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="skin-blue fixed">
+<body class="skin-black fixed">
 <!-- header logo: style can be found in header.less -->
 <header class="header">
     <a href="<?php echo base_url(); ?>" class="logo">
@@ -80,14 +80,14 @@
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
             <!-- sidebar menu: : style can be found in sidebar.less -->
-            <form action="#" method="get" class="sidebar-form">
+            <!-- <form action="#" method="get" class="sidebar-form">
                 <div class="input-group">
                     <input type="text" name="q" class="form-control" placeholder="Search..."/>
                     <span class="input-group-btn">
                         <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
                     </span>
                 </div>
-            </form>
+            </form> -->
             <ul class="sidebar-menu">
                 <li <?php echo(($selected == 'view') ? 'class="active treeview"' : 'class="treeview"'); ?>>
                     <a href="#">

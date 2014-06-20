@@ -98,7 +98,12 @@
 	}
 	
 	$(function() {
-		$('.select2').select2();
+		// $('.select2').select2();
+		$('.selectpicker').selectpicker({
+			style: 'btn-sm btn-primary',
+			size: 8,
+			width: '100%',
+		});
 		$(document).on('click', 'a[href="#"]', function(event) {
 			event.preventDefault();
 		});

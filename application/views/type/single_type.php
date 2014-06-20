@@ -6,8 +6,8 @@ $name = $detail->name
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        View
-        <small>Type ~ <?php echo $name ?></small>
+        Type
+        <small><?php echo $name ?></small>
     </h1>
     <ol class="breadcrumb">
         <li><a href="<?php echo base_url(); ?>"><i class="fa fa-home"></i> Home</a></li>
@@ -23,16 +23,16 @@ $name = $detail->name
 	        <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs pull-right">
                     <li><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
-                    <li><a href="#pokemon_list" data-toggle="tab">Pokemon</a></li>
+                    <!-- <li class=""><a href="#type-description" data-toggle="tab">Type Match up</a></li> -->
                     <li class=""><a href="#move-list" data-toggle="tab">Move</a></li>
-                    <li class="active"><a href="#type-description" data-toggle="tab">Description</a></li>
+                    <li class="active"><a href="#pokemon_list" data-toggle="tab">Pokemon</a></li>
                     <li class="pull-left header"><i class="fa fa-fire"></i><?php echo $name ?></li>
                 </ul>
                 <div class="tab-content">
-                    <div class="tab-pane active" id="type-description">
+                    <div class="tab-pane" id="type-description">
                         
                     </div><!-- /.tab-pane -->
-                    <div class="tab-pane" id="pokemon_list">
+                    <div class="tab-pane active" id="pokemon_list">
                         <table class="table table-bordered table-condensed table-striped data-table-full table-responsive">
                             <thead>
                                 <tr>

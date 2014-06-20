@@ -205,12 +205,12 @@ function rc() {
                     <h4 class="modal-title" id="ie-title">Import - Export</h4>
                 </div>
                 <div class="modal-body" id="ie-container">
-                    <textarea name="" id="" rows="10" class="form-control input-sm"></textarea>
+                    <textarea name="" id="" rows="10" class="form-control input-sm" value=""></textarea>
                 </div>
                 <div class="modal-footer">
                     <div class="row pull-right">
                         <div class="col-xs-12">
-                            <button id="" class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Save</button>
+                            <button id="" class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Import</button>
                             <button id="" class="btn btn-danger btn-sm" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>

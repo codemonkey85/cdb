@@ -27,5 +27,6 @@
 <?php if (isset($data_script)) echo $data_script; ?>
 <?php if (isset($tools_script)) echo $tools_script; ?>
 <?php if (isset($builder_script)) echo $builder_script ?>
+<?php if (isset($xytools_script)) echo $xytools_script  ?>
 </body>
 </html>

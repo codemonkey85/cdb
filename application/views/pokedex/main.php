@@ -23,6 +23,10 @@ $types_list = array('Bug', 'Dark', 'Dragon', 'Electric', 'Fairy', 'Fighting', 'F
                 </div>
                 <div class="box-body">
                     <div class="row">
+                        <div class="col-sm-12">
+                            <a href="<?php echo base_url() ?>pokedex/masterlist" class="btn btn-block btn-xs btn-success">Master List</a>
+                        </div>
+                        <br><br>
                         <div class="col-sm-4">
                             <select name="" id="" class="selectpicker">
                                 <option value="">A-G</option>

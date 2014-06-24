@@ -45,7 +45,8 @@ function rc() {
                     </div> <!-- /.row -->
                 </div><!-- /.box-body -->
                 <div class="box-footer">
-                    <button id="ie-button" class="btn btn-primary btn-xs"><i class="fa fa-save"></i> Import/Export</button>
+                    <button id="ie-button" class="btn btn-primary btn-sm"><i class="fa fa-download"></i> Import/Export</button>
+                    <button id="save-button" class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Save</button>
                 </div>
             </div><!-- /.box -->
 	    </div><!-- /.col -->
@@ -210,7 +211,7 @@ function rc() {
                 <div class="modal-footer">
                     <div class="row pull-right">
                         <div class="col-xs-12">
-                            <button id="" class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Import</button>
+                            <button id="import-btn" class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Import</button>
                             <button id="" class="btn btn-danger btn-sm" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>

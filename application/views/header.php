@@ -54,7 +54,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="skin-black fixed">
+<body class="skin-blue fixed">
 <!-- header logo: style can be found in header.less -->
 <header class="header">
     <a href="<?php echo base_url(); ?>" class="logo">
@@ -141,10 +141,10 @@
                                 <span>Calculators</span>
                             </a>
                         </li>
-                        <li <?php echo((isset($sub_selected) && $sub_selected == 'breed_tracker') ? 'class="active"' : ""); ?>>
-                            <a href="<?php echo site_url('tools/breed_tracker') ?>">
+                        <li <?php echo((isset($sub_selected) && $sub_selected == 'xytools') ? 'class="active"' : ""); ?>>
+                            <a href="<?php echo site_url('tools/xytools') ?>">
                                 <i class="fa fa-plus"></i>
-                                <span>Breed tracker</span>
+                                <span>X/Y Tools</span>
                             </a>
                         </li>
                     </ul>

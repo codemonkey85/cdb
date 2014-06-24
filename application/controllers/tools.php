@@ -16,13 +16,14 @@ class Tools extends CI_Controller {
 		$this->load->view('footer');
 	}
 
-	function breed_tracker() {
+	function xytools() {
 		$data = new stdClass();
-		$data->title = "Breed tracker";
+		$data->title = "Pokemon X/Y Tools";
 		$data->selected = 'tools';
-		$data->sub_selected = 'breed_tracker';
+		$data->sub_selected = 'xytools';
+		$data->xytools_script = $this->load->view('scripts/xytools_script', '', true);
 		$this->load->view('header', $data);
-		$this->load->view('tools/breed_tracker');
+		$this->load->view('tools/xytools');
 		$this->load->view('footer');
 	}
 }

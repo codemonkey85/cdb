@@ -100,6 +100,9 @@
 
 	// Document's ready!
 	$(function() {
+		if(localStorage.getItem('teamdata')) {
+			console.log(process_team_str(localStorage.getItem('teamdata')));
+		}
 		$('.selectpicker').selectpicker({
 			style: 'btn-sm btn-primary',
 			size: 8
@@ -164,11 +167,19 @@
 			}
 			c_pkm = pl.val();
 		});
-		$('#ie-button').on('click', function() { // click import/export btn
-			// dummy data:
-			// Smaug (Charizard) (M) @ Charizardite Y\nAbility: Solar Power\nShiny: No\nEVs: 4 HP \/ 252 SAtk \/ 252 Spd\nModest Nature\n- Solar Beam\n- Fire Blast\n- Focus Blast\n- Roost\n\nLustrous (Aegislash) (M) @ Leftovers\nAbility: Stance Change\nShiny: Yes\nEVs: 240 HP \/ 16 Atk \/ 252 SAtk\nQuiet Nature\nIVs: 30 Atk \/ 30 SAtk \/ 30 Spd\n- King\'s Shield\n- Pursuit\n- Shadow Ball\n- 
+		$('#ie-button').on('click', function() {
 			$('.ie-modal textarea').val('');
-			$('.ie-modal').modal('show');			
+			$('.ie-modal').modal('show');
+		});
+		$('#import-btn').on('click', function () {
+			rawdata = $('.ie-modal textarea').val();
+			if (rawdata != "") {
+				localStorage.setItem('teamdata', rawdata);
+				console.log(process_team_str(rawdata));
+			} else {
+				return;
+			}
+			$('.ie-modal').modal('hide');
 		});
 		isShiny.on('ifChecked', function() { // change Pokemon's color scheme
             var current_pkm = $(this).attr('data-species');

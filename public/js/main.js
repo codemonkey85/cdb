@@ -100,7 +100,7 @@
 	$(function() {
 		// $('.select2').select2();
 		$('.selectpicker').selectpicker({
-			style: 'btn-sm btn-primary',
+			style: 'btn-xs btn-primary',
 			size: 8,
 			width: '100%',
 		});
